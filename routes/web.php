@@ -35,3 +35,6 @@ Route::get('articles/{id}', [ArticleController::class, 'show'])
 
 Route::get('articles/{id}/edit', [ArticleController::class, 'edit'])
     ->name('articles.edit');
+
+Route::patch('articles/{id}', [ArticleController::class, 'update'])
+    ->name('articles.update');
